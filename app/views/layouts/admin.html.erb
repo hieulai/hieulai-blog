@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <title><%= html_title yield(:title) %></title>
+  <%= csrf_meta_tag %>
+  <%= stylesheet_link_tag 'application' %>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css' />
+</head>
+
+<body class="admin <%= controller_name %> <%= action_name %>">
+  <div id="admin">
+      <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+              <ul class="nav">
+                  <li class="active"><a href="#">Posts</a></li>
+                  <li><a href="#">Settings</a></li>
+                  <li><a href="#">Tags</a></li>
+                  <li><a href="#">Resources</a></li>
+              </ul>
+          </div>
+      </div>
+      <div id="save"></div>
+    <% if notice %><span class="notice"><%= notice %></span><% end %>
+    <%= yield %>
+  </div>
+
+  <%= javascript_include_tag 'application' %>
+</body>
+</html>

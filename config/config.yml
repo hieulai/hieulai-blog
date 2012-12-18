@@ -1,0 +1,11 @@
+---
+title:               Hieu Lai
+tagline:             I'm a software engineer live in Hanoi VietNam, love open sources and pramatical programming(ROR, Play framework, HTML5)
+login:               <%= ENV["obtvse_login"] ? ENV["obtvse_login"] : "hieulaitrung" %>
+password:            <%= ENV["obtvse_password"] ? ENV["obtvse_password"] : "asakura87" %>
+name:                Hieu Lai Trung
+twitter:             hieulaitrung
+github:              hieulai
+email:               hieulaitrung@gmail.com
+google_analytics_id: UA-35449234-1
+disqus_shortname:    <%= ENV.fetch("hieulaitrung") { "hieulaitrung" } %>
